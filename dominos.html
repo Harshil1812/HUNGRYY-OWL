@@ -1,0 +1,338 @@
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-image: linear-gradient(to bottom, rgb(209, 184, 152), white);
+        }
+
+        .logo {
+            font-size: 20px;
+            padding: 8px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0px;
+            background-size: 100%;
+        }
+
+        .m1 {
+            padding: 50px;
+            font-size: 26px;
+            font-family: monospace
+        }
+
+        .body img {
+            width: 270px;
+            height: 280px;
+
+        }
+
+        .body {
+            padding: 10px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .i1 img {
+            border-radius: 20px;
+            height: 260px;
+            width: 300px;
+        }
+
+        .i1 img:hover {
+            transform: scale(1.2);
+            transition: 2s ease;
+        }
+
+        .c1 {
+            padding-left: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .all {
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu {
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 40px;
+        }
+
+        .h {
+            margin-top: 20px;
+            border: 2px solid;
+            border-radius: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 5px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(229, 228, 230);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .h img {
+            border-radius: 10px;
+            width: 200px;
+            height: 150px;
+        }
+
+        .b1 {
+            width: 70px;
+            height: 40px;
+            border-radius: 6px;
+            font-size: large;
+            color: rgb(55, 152, 55);
+        }
+
+        .b1:hover {
+            border: 3px solid;
+        }
+        .add-to-cart-btn {
+            width: 70px;
+            height: 40px;
+            border-radius: 6px;
+            font-size: large;
+            color: rgb(55, 152, 55);
+        }
+
+        .add-to-cart-btn:hover {
+            border: 3px solid;
+        }
+
+        .cart-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cart-controls button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .quantity {
+            font-size: large;
+        }
+
+        .cart-controls button:hover {
+            background-color: #0056b3;
+        }
+        #searchBox{
+            width: 400px;
+            height: 40px;
+            border: 2px solid ;
+            border-radius: 30px;
+            padding: 10px;
+            background-color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="LOGO .PNG" width="110px" height="90px"><br>
+            <b>Hungry Owl</b>
+        </div>
+        <div class="m1"><a href="Home Page.html">Home</a></div>
+        <div class="m1">Menu</div>
+        <div class="m1">About us</div>
+        <div class="m1">Contact us</div>
+    </div>
+    <div class="all">
+        <div class="content">
+            <img src="dominos.png">
+            <div class="c1">
+                <font size=10>Domino's Pizza</font><br>
+                <font size=4>Pizza, Choco-Lava Cake, Garlic Bread, etc.<br>Timings: 11:00 AM - 11:00 PM&ensp;&ensp; Mon
+                    - Sun
+                    <br><br>
+                </font>
+                <font size="5"> 4.3⭐ </font><u>Delivery Ratings</u>
+            </div>
+        </div>
+        <div class="i1">
+            <img src="d1.jpg">
+            <img src="d2.jpg">
+        </div>
+    </div>
+    <div class="menu">
+        <font size=6>Menu:-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="search" id="searchBox" placeholder="🔍 Search Menu"></font-size>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<a href="">Cart 🛒</a><br>
+            <div class="h">
+                <div class="h1">
+                    <font size="7">Margherita Pizza</font><br>
+                    <font size="5">₹149<br><br>A hugely popular margherita, with a deliciously tangy single cheese
+                        topping.</font>
+                </div>
+                <div class="h2"> <img src="margherita.jpg"><br><br>
+                    <center>
+                        <div class="cart-controls">
+                            <button class="decrease">-</button>
+                            <span class="quantity">0</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <button class="add-to-cart-btn">Add</button>
+                    </center>
+                </div>
+            </div>
+            <div class="h">
+                <div class="h1">
+                    <font size="7">Peppy Paneer</font><br>
+                    <font size="5">₹199<br><br>Chunky paneer with crisp capsicum and spicy red pepper - quite a
+                        mouthful!.</font>
+                </div>
+                <div class="h2"> <img src="Peppy_Paneer.jpg"><br><br>
+                    <center>
+                        <div class="cart-controls">
+                            <button class="decrease">-</button>
+                            <span class="quantity">0</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <button class="add-to-cart-btn">Add</button>
+                    </center>
+                </div>
+            </div>
+            <div class="h">
+                <div class="h1">
+                    <font size="7">Farm House</font><br>
+                    <font size="5">₹249<br><br>A pizza that goes ballistic on veggies! Check out this mouth watering
+                        overload of crunchy, crisp capsicum, succulent mushrooms and fresh tomatoes.</font>
+                </div>
+                <div class="h2"> <img src="Farmhouse.jpg"><br><br>
+                    <center>
+                        <div class="cart-controls">
+                            <button class="decrease">-</button>
+                            <span class="quantity">0</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <button class="add-to-cart-btn">Add</button>
+                    </center>
+                </div>
+            </div>
+            <div class="h">
+                <div class="h1">
+                    <font size="7">Indi Tandoori Paneer</font><br>
+                    <font size="5">₹249<br><br>It is hot. It is spicy. It is oh-so-Indian. Tandoori paneer with capsicum
+                        I red paprika I mint mayo.</font>
+                </div>
+                <div class="h2"> <img src="IndianTandooriPaneer.jpg"><br><br>
+                    <center>
+                        <div class="cart-controls">
+                            <button class="decrease">-</button>
+                            <span class="quantity">0</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <button class="add-to-cart-btn">Add</button>
+                    </center>
+                </div>
+            </div>
+            <div class="h">
+                <div class="h1">
+                    <font size="7">Stuffed Garlic Bread</font><br>
+                    <font size="5">₹99<br><br>Freshly Baked Garlic Bread stuffed with mozzarella cheese, sweet corns &
+                        tangy and spicy jalapeños.</font>
+                </div>
+                <div class="h2"> <img src="stuffed-garlic-breadstick_1346070564.webp"><br><br>
+                    <center>
+                        <div class="cart-controls">
+                            <button class="decrease">-</button>
+                            <span class="quantity">0</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <button class="add-to-cart-btn">Add</button>
+                    </center>
+                </div>
+            </div>
+            <div class="h">
+                <div class="h1">
+                    <font size="7">Creamy Tomato Pasta</font><br>
+                    <font size="5">₹109<br><br>Instant Fusilli Pasta, Creamy Culinary Dressing, Onion, Olive, Green
+                        Capsicum, Parsley sprinkle.</font>
+                </div>
+                <div class="h2"> <img src="CreamyTomatoVeg_N_(3).jpg"><br><br>
+                    <center>
+                        <div class="cart-controls">
+                            <button class="decrease">-</button>
+                            <span class="quantity">0</span>
+                            <button class="increase">+</button>
+                        </div>
+                        <button class="add-to-cart-btn">Add</button>
+                    </center>
+                </div>
+            </div>
+    </div>
+    <script>
+        document.addEventListener('click', function (event) {
+            if (event.target.classList.contains('increase')) {
+                const quantityElement = event.target.previousElementSibling;
+                let quantity = parseInt(quantityElement.textContent);
+                quantityElement.textContent = quantity + 1;
+            }
+
+            if (event.target.classList.contains('decrease')) {
+                const quantityElement = event.target.nextElementSibling;
+                let quantity = parseInt(quantityElement.textContent);
+                if (quantity > 0) {
+                    quantityElement.textContent = quantity - 1;
+                }
+            }
+
+            if (event.target.classList.contains('add-to-cart-btn')) {
+                const productElement = event.target.closest('.h2');
+                const quantityElement = productElement.querySelector('.quantity');
+                const quantity = quantityElement.textContent;
+                alert('Added ' + quantity + ' item(s) to the cart!');
+            }
+        });
+    </script>
+    <script>
+        const searchBox = document.getElementById('searchBox')
+        const itemList = document.getElementsByClassName('k1')
+        const items = document.getElementsByClassName('h')
+        searchBox.addEventListener('input', () => {
+            const value = searchBox.value.toLowerCase();
+            for (const item of items) {
+                const text = item.textContent;
+
+                if (text.toLowerCase().includes(value)) {
+                    item.style.display = "";
+                }
+                else {
+                    item.style.display = "none";
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>
